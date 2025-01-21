@@ -29,7 +29,7 @@ with st.form("form"):
         st.components.v1.html(js_code)
 
 # 텍스트 파일 다운로드 버튼
-text_contents = "user"
+text_contents = "0"
 st.download_button("Download text", text_contents)
 
 # folium 지도 생성
