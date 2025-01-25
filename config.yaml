@@ -1,0 +1,12 @@
+cookie:
+  expiry_days: 0
+  key: some_signature_key
+  name: some_cookie_name
+credentials:
+  usernames:
+    "\uB85C\uADF8\uC778":
+      name: "\uB85C\uADF8\uC778\uD14C\uC2A4\uD2B8"
+      password: $2b$12$jcP0aN8dNt2Hi4369kPjg.Il66lOjoDxLc2jCBjfqXY97UeBwRdH.
+    "\uC624\uAD6C":
+      name: "\uC624\uAD6C\uC758\uBAA8\uD5D8"
+      password: $2b$12$Vv3WXjpd.iIPxUVuRQlcu.0LwnUba2ssmA0q2MVb13hdNwLmGENpm
