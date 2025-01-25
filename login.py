@@ -1,5 +1,7 @@
+import yaml
 import datetime
 import streamlit as st
+import streamlit_authenticator as stauth
 
 # Form 생성
 st.title("🛴Kick Bird")
@@ -10,10 +12,10 @@ with st.form("form"):
     
     # 사용자 정보 입력 
     st.subheader("이름")
-    text_input = st.text_input(" ", placeholder="이름을 입력하세요.")
+    text_input = st.text_input("이름", placeholder="이름을 입력하세요.", label_visibility="hidden")
 
     st.subheader("생년월일")
-    d = st.date_input("", value=None)
+    birthday = st.date_input("생년월일", value=None, label_visibility="hidden")
 
     # 로그인 버튼
     submitted = st.form_submit_button("로그인", type="primary")
@@ -27,6 +29,7 @@ with st.form("form"):
         </script>
         """
         st.components.v1.html(js_code)
+
 
 # 텍스트 파일 다운로드 버튼
 text_contents = "0"
